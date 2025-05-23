@@ -1,0 +1,6 @@
+Ison Marine Colors
+Boat/Truck: HEX: #55cbb9 RGB: 85, 203, 185
+Gray: Hex: 596366
+
+Main area: red
+Buttons: red
