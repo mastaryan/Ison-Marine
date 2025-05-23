@@ -276,7 +276,9 @@ strong {
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
-  color: #FF0000;
+    width: 30px; /* Adjust based on your desired logo size */
+    height: 30px;
+    object-fit: contain; /* Ensure the logo scales properly */
 }
 
 /*---------------------------------------
