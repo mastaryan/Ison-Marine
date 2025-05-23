@@ -276,9 +276,19 @@ strong {
   CUSTOM ICON COLOR               
 -----------------------------------------*/
 .custom-icon {
-    width: 30px; /* Adjust based on your desired logo size */
+    width: 30px; /* Default size for desktop */
     height: 30px;
     object-fit: contain; /* Ensure the logo scales properly */
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+}
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .custom-icon {
+        width: 20px; /* Smaller size for mobile */
+        height: 20px;
+    }
 }
 
 /*---------------------------------------
