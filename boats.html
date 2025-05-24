@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Boats - Ison Marine</title>
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Fixed size for carousel images */
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            /* Fixed height for consistency */
+            object-fit: cover;
+            /* Maintains aspect ratio without distortion */
+        }
+
+        /* Modal image styling */
+        #modalImage {
+            width: 100%;
+            height: auto;
+            /* Displays original size in modal */
+        }
+    </style>
 </head>
+
 <body>
     <!-- Header -->
     <header class="site-header">
@@ -15,29 +34,24 @@
                 <div class="col-12">
                     <nav class="navbar navbar-expand-lg navbar-solid">
                         <a class="navbar-brand" href="index.html">Ison Marine</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="index.html#section_2">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll active" href="index.html#section_3">Boats</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="index.html#section_4">Products</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="index.html#section_5">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link click-scroll" href="index.html#section_6">Events</a>
-                                </li>
+                                <li class="nav-item"><a class="nav-link click-scroll"
+                                        href="index.html#section_1">Home</a></li>
+                                <li class="nav-item"><a class="nav-link click-scroll"
+                                        href="index.html#section_2">About</a></li>
+                                <li class="nav-item"><a class="nav-link click-scroll active"
+                                        href="index.html#section_3">Boats</a></li>
+                                <li class="nav-item"><a class="nav-link click-scroll"
+                                        href="index.html#section_4">Products</a></li>
+                                <li class="nav-item"><a class="nav-link click-scroll"
+                                        href="index.html#section_5">Services</a></li>
+                                <li class="nav-item"><a class="nav-link click-scroll"
+                                        href="index.html#section_6">Events</a></li>
                             </ul>
                             <a href="tel:6063059636" class="btn custom-btn d-lg-block d-none">Call Us</a>
                         </div>
@@ -47,98 +61,253 @@
         </div>
     </header>
 
-    <!-- Main Content (unchanged) -->
+    <!-- Main Content -->
     <main>
+        <!-- Our Boats Section -->
         <section id="our-boats" class="section-padding">
             <div class="container">
                 <h2>Our Boats</h2>
                 <div class="boat-brands">
                     <div class="brand-card">
-                        <img src="/images/artists/cigarette-logo.jpg" alt="Cigarette Racing Boats">
+                        <img src="/images/logos/cigarette.png" alt="Cigarette Racing Boats">
                         <h3>Cigarette Racing Boats</h3>
                         <p>High-performance luxury boats.</p>
                         <a href="#cigarette-boats" class="custom-btn">See our inventory</a>
                     </div>
                     <div class="brand-card">
-                        <img src="/images/artists/gsx-logo.png" alt="GSX Boats">
+                        <img src="/images/logos/gsx.png" alt="GSX Boats">
                         <h3>GSX Boats</h3>
-                        <p>Innovative design and superior craftsmanship.</p>
+                        <p>Innovative design and craftsmanship.</p>
                         <a href="#gsx-boats" class="custom-btn">See our inventory</a>
                     </div>
                     <div class="brand-card">
-                        <img src="/images/artists/hellkats-logo.jpg
-                        
-                        
-                        
-                        
-                        
-                        
-                        " alt="Hellkat Boats">
+                        <img src="/images/artists/hellkats-logo.jpg" alt="Hellkat Boats">
                         <h3>Hellkat Boats</h3>
                         <p>Inventory coming soon.</p>
-                        <a href="#hellkat-boats" class="custom-btn disabled">Check back soon</a>
+                        <a href="#hellkat-boats" class="custom-btn">See our inventory</a>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Cigarette Racing Boats Inventory -->
         <section id="cigarette-boats" class="section-padding">
+            <div class="header-wrapper">
+    <h2>Cigarette Racing Boats Inventory</h2>
+  </div>
             <div class="container">
-                <h2>Cigarette Racing Boats Inventory</h2>
-                <div id="cigaretteCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/cigarette-boat1.jpg" class="d-block w-100 gallery-image" alt="2025 Cigarette Nighthawk 'Ison Edition'" data-image="/images/cigarette-boat1.jpg">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>2025 Cigarette Nighthawk "Ison Edition"</p>
+                <div class="boat-listings row">
+                    <!-- Boat 1: 2025 Cigarette Nighthawk "Ison Edition" -->
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-ciga-1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/boats/cigarette/gray1.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray1.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray2.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray2.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray3.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray3.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray4.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray4.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray5.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray5.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray6.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray6.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray7.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray7.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray8.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray8.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/gray9.webp" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/boats/cigarette/gray9.webp">
+                                        </div>
+                                        <!-- Add more images here -->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carousel-ciga-1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel-ciga-1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/cigarette-boat2.jpg" class="d-block w-100 gallery-image" alt="1988 Cigarette Kevlar Edition" data-image="/images/cigarette-boat2.jpg">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>1988 Cigarette Kevlar Edition</p>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">2025 Cigarette Nighthawk "Ison Edition"</h3>
+                                <p><strong>Price:</strong> $1,250,000</p>
+                                <p><strong>Year:</strong> 2025</p>
+                                <p><strong>Description:</strong> A high-performance luxury boat with cutting-edge
+                                    technology.</p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#cigaretteCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#cigaretteCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+
+                    <!-- Boat 2: 1988 Cigarette Kevlar Edition -->
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-ciga-2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/boats/cigarette/88kevlar1.webp"
+                                                class="d-block gallery-image" alt="1988 Cigarette Kevlar Edition"
+                                                data-image="/images/boats/cigarette/88kevlar1.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/cigarette/88kevlar2.webp"
+                                                class="d-block gallery-image" alt="1988 Cigarette Kevlar Edition"
+                                                data-image="/images/boats/cigarette/88kevlar2.webp">
+                                        </div>
+                                        <!-- Add more images here -->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carousel-ciga-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel-ciga-2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">1988 Cigarette Kevlar Edition</h3>
+                                <p><strong>Price:</strong> $550,000</p>
+                                <p><strong>Year:</strong> 1988</p>
+                                <p><strong>Description:</strong> A classic boat with a rich history and timeless design.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more boat listings here -->
                 </div>
             </div>
         </section>
 
+        <!-- GSX Boats Inventory -->
         <section id="gsx-boats" class="section-padding">
-            <div class="container">
+            <div class="header-wrapper">
                 <h2>GSX Boats Inventory</h2>
-                <div id="gsxCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="/images/gsx-boat1.jpg" class="d-block w-100 gallery-image" alt="GSX Boat 1" data-image="/images/gsx-boat1.jpg">
-                            <div class="carousel-caption d-none d-md-block">
-                                <p>GSX Boat 1 - Cutting-edge design</p>
+  </div>
+            <div class="container">
+                <div class="boat-listings row">
+                    <!-- Boat 1: GSX Boat 1 -->
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-gsx-1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/boats/gsx/gsx280-1.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-1.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-2.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-2.webp">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-3.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-3.webp">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-4.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-4.webp">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-5.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-5.webp">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-6.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-6.webp">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-7.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-7.webp">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-8.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-8.webp">
+                                        </div>
+
+                                        <div class="carousel-item">
+                                            <img src="/images/boats/gsx/gsx280-9.webp" class="d-block gallery-image"
+                                                alt="GSX Boat 1" data-image="/images/boats/gsx/gsx280-9.webp">
+                                        </div>
+
+                                        <!-- Add more images here -->
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-gsx-1"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-gsx-1"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">2025 GSX 280</h3>
+                                <p><strong>Price:</strong> $500,000</p>
+                                <p><strong>Year:</strong> 2025</p>
+                                <p><strong>Description:</strong> Boat specs goes here</p>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#gsxCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#gsxCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <!-- Add more boat listings here -->
                 </div>
             </div>
         </section>
 
+        <!-- Hellkat Boats Inventory -->
         <section id="hellkat-boats" class="section-padding">
-            <div class="container">
+            <div class="header-wrapper">
                 <h2>Hellkat Boats Inventory</h2>
+  </div>
+            <div class="container">
                 <div class="coming-soon">
                     <p>Currently, we have no Hellkat boats in inventory. Please check back soon for updates!</p>
                 </div>
@@ -166,7 +335,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img id="modalImage" src="" alt="Boat Image" style="width: 100%;">
+                    <img id="modalImage" src="" alt="Boat Image">
                 </div>
             </div>
         </div>
@@ -175,30 +344,35 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Gallery Modal
-        var galleryImages = document.querySelectorAll('.gallery-image');
-        galleryImages.forEach(function (img) {
-            img.addEventListener('click', function () {
-                var imageSrc = this.getAttribute('data-image');
-                var modalImage = document.getElementById('modalImage');
-                modalImage.src = imageSrc;
-                var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
-                imageModal.show();
+        document.addEventListener('DOMContentLoaded', function () {
+            // Image Modal Functionality
+            const galleryImages = document.querySelectorAll('.gallery-image');
+            galleryImages.forEach(img => {
+                img.addEventListener('click', function () {
+                    const imageSrc = this.getAttribute('data-image');
+                    const modalImage = document.getElementById('modalImage');
+                    modalImage.src = imageSrc;
+                    const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    imageModal.show();
+                });
             });
-        });
 
-        // Smooth Scroll for Nav Links
-        const navLinks = document.querySelectorAll('.navbar-nav .click-scroll');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function (e) {
-                e.preventDefault();
-                const href = this.getAttribute('href');
-                const [page, sectionId] = href.split('#');
-                window.location.href = href;
+            // Smooth Scroll for "See our inventory" Links
+            const navLinks = document.querySelectorAll('.click-scroll');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        window.location.href = this.getAttribute('href');
+                    }
+                });
             });
         });
-    });
     </script>
 </body>
+
 </html>

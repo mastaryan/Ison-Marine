@@ -1239,3 +1239,13 @@ strong {
     max-height: 400px;
     object-fit: contain;
 }
+
+.header-wrapper {
+  background-color: var(--secondary-color);
+  padding: 10px;
+  text-align: center;
+}
+.header-wrapper h2 {
+  color: var(--white-color);
+  margin: 0;
+}
