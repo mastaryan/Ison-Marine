@@ -2,5 +2,51 @@ Ison Marine Colors
 Boat/Truck: HEX: #55cbb9 RGB: 85, 203, 185
 Gray: Hex: 596366
 
-Main area: red
-Buttons: red
+
+Image Carousel help
+Image Carousel
+Implementation: Each boat has its own Bootstrap carousel with a unique ID (e.g., carousel-ciga-1, carousel-gsx-1).
+Features:
+Scrollable images with previous/next buttons.
+Images are clickable, opening a full-size view in a modal (similar to the reference site’s functionality).
+Image Sources: Kept your existing src paths (e.g., /images/cigarette-boat1-1.jpg). Add more <div class="carousel-item"> elements as needed for additional images per boat.
+
+How to Add More Boats
+To add a new boat under any brand (e.g., Cigarette Racing Boats), copy and paste a .boat-listing block within the .boat-listings container:
+<div class="boat-listing col-md-6 col-lg-4 mb-4">
+    <div class="card h-100">
+        <div class="image-carousel">
+            <div id="carousel-ciga-3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/images/new-boat-1.jpg" class="d-block w-100 gallery-image" alt="New Boat" data-image="/images/new-boat-1.jpg">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/new-boat-2.jpg" class="d-block w-100 gallery-image" alt="New Boat" data-image="/images/new-boat-2.jpg">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-ciga-3" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-ciga-3" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="card-body boat-details">
+            <h3 class="card-title">New Boat Name</h3>
+            <p><strong>Price:</strong> $X,XXX</p>
+            <p><strong>Year:</strong> 20XX</p>
+            <p><strong>Description:</strong> Your description here.</p>
+        </div>
+    </div>
+</div>
+
+Update: Change the id (e.g., carousel-ciga-3) and data-bs-target attributes to a unique value.
+Images: Replace src and data-image with your actual image paths.
+Details: Fill in the boat’s name, price, year, and description.
+Styling: The layout uses Bootstrap’s default styles. You can enhance it by tweaking css/templatemo-festava-live.css to match your site’s design (e.g., colors, fonts).
+Images: I’ve used placeholder paths (e.g., /images/cigarette-boat1-1.jpg). Replace these with your actual image files.
+No Filters: Omitted filter options as requested, focusing solely on the listing display.
