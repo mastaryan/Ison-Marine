@@ -1157,3 +1157,85 @@ strong {
     font-size: 20px;
   }
 }
+
+/* Boats Page Styles */
+.boat-brands {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.brand-card {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-small);
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius-small);
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 10px;
+    color: var(--p-color);
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--section-bg-color);
+    border-radius: var(--border-radius-small);
+    color: var(--p-color);
+}
+
+.coming-soon img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.custom-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .brand-card {
+        width: 100%;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/* Boats Page Styles - Append to templatemo-festava-live.css */
+
+.brand-card img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-small);
+    margin-bottom: 15px;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: contain;
+}
