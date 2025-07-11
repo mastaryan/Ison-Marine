@@ -3,7 +3,7 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #55cbb9;
+  --primary-color:                #007BF5;
   --secondary-color:              #fc0000;
   --section-bg-color:             #f0f8ff;
   --custom-btn-bg-color:          #FF0000;
@@ -702,7 +702,7 @@ strong {
 }
 
 .schedule-table thead th {
-  background-color: #55cbb9;
+  background-color: #007BF5;
 }
 
 .schedule-table th,
@@ -966,7 +966,7 @@ strong {
 }
 
 .site-footer-top {
-  background-color: #55cbb9;
+  background-color: #007BF5;
   background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
   background-repeat: no-repeat;
   margin-bottom: 70px;
@@ -1248,4 +1248,31 @@ strong {
 .header-wrapper h2 {
   color: var(--white-color);
   margin: 0;
+}
+
+/* Social icon adjustments */
+.social-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Update footer top background color */
+.site-footer-top {
+  background-color: #007BF5;
+}
+
+/* Center news feed */
+.news-feed-container {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Adjust icon centering */
+.social-icon-link span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
