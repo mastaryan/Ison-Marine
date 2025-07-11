@@ -591,6 +591,21 @@
         <script src="js/jquery.sticky.js"></script>
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
+        <script>
+            document.querySelectorAll('.dropdown-toggle').forEach(function (dropdownToggleEl) {
+                dropdownToggleEl.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    let parent = this.parentElement;
+                    parent.classList.toggle('show');
+                    let menu = this.nextElementSibling;
+                    if (menu) {
+                        menu.classList.toggle('show');
+                    }
+                });
+            });
+            </script>
+            
 
 
     </body>
