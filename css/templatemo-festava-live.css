@@ -1279,4 +1279,35 @@ strong {
 .dropdown-menu.show {
   display: block;
 }
+/* Ensure dropdowns are clickable on mobile */
+@media (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    background-color: var(--dark-color);
+    border: none;
+    padding: 10px 0;
+  }
 
+  .navbar-nav .dropdown-item {
+    color: var(--white-color);
+    padding: 10px 20px;
+    font-size: var(--p-font-size);
+  }
+
+  .navbar-nav .dropdown-item:hover,
+  .navbar-nav .dropdown-item:focus {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+  }
+
+  /* Prevent dropdown toggle from collapsing the entire menu */
+  .navbar-nav .dropdown-toggle {
+    position: relative;
+  }
+
+  /* Ensure dropdown is positioned correctly */
+  .navbar-nav .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+}
