@@ -1311,3 +1311,6 @@ strong {
     box-shadow: none;
   }
 }
+.dropdown-menu {
+  z-index: 1050; /* Higher than navbar to prevent overlap issues */
+}
