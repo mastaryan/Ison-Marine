@@ -1322,3 +1322,56 @@ strong {
     display: block;
   }
 }
+/* Menu styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--white-color);
+  display: block;
+  padding: 10px 20px;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background: var(--dark-color);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px 15px;
+}
+
+/* Mobile menu styles */
+@media (max-width: 991px) {
+  nav ul li ul {
+      position: static;
+      display: none;
+  }
+
+  nav ul li.active > ul {
+      display: block;
+  }
+
+  nav ul li a {
+      padding: 15px;
+  }
+
+  nav ul li ul li a {
+      padding-left: 30px;
+  }
+}
