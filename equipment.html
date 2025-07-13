@@ -1,159 +1,615 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ison Marine</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/templatemo-festava-live.css" rel="stylesheet">
-        <!-- Fallback CDN for testing -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ison Marine Boat Brands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+    <!-- Fallback CDN for testing -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Header -->
+    <header class="site-header">
         <div class="container">
-            <a class="navbar-brand" href="/index.html">Ison Marine</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Boats</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
-                            <li><a class="dropdown-item" href="/boats/sold-boats.html">Sold Boats</a></li>
-                            <li><a class="dropdown-item" href="/financing.html">Financing</a></li>
-                            <li><a class="dropdown-item" href="/boats/consignment.html">Consignment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Brands</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/brands/all-brands.html">All Brands</a></li>
-                            <li><a class="dropdown-item" href="/brands/glasstream.html">Glasstream</a></li>
-                            <li><a class="dropdown-item" href="/brands/gsx.html">GSX</a></li>
-                            <li><a class="dropdown-item" href="/brands/hellkat.html">Hellkat</a></li>
-                            <li><a class="dropdown-item" href="/brands/cigarette.html">Cigarette</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Products</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/products/cleaning.html">Cleaning</a></li>
-                            <li><a class="dropdown-item" href="/products/apparel.html">Apparel</a></li>
-                            <li><a class="dropdown-item" href="/products/accessories.html">Accessories</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Equipment</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/equipment/lifts.html">Lifts</a></li>
-                            <li><a class="dropdown-item" href="/equipment/trailers.html">Trailers</a></li>
-                            <li><a class="dropdown-item" href="/equipment/flooring.html">Flooring</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Parts and Services</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/parts-service/parts.html">Parts</a></li>
-                            <li><a class="dropdown-item" href="/parts-service/services.html">Services</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">About Us</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/about-us/testimonials.html">Testimonials</a></li>
-                            <li><a class="dropdown-item" href="/about-us/contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <a href="tel:6063059636" class="btn custom-btn d-lg-block d-none">Call Us</a>
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="/index.html">Ison Marine</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Boats</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
+                                            <li><a class="dropdown-item" href="/boats/sold-boats.html">Sold Boats</a></li>
+                                            <li><a class="dropdown-item" href="/financing.html">Financing</a></li>
+                                            <li><a class="dropdown-item" href="/boats/consignment.html">Consignment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Brands</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/brands/all-brands.html">All Brands</a></li>
+                                            <li><a class="dropdown-item" href="/brands/glasstream.html">Glasstream</a></li>
+                                            <li><a class="dropdown-item" href="/brands/gsx.html">GSX</a></li>
+                                            <li><a class="dropdown-item" href="/brands/hellkat.html">Hellkat</a></li>
+                                            <li><a class="dropdown-item" href="/brands/cigarette.html">Cigarette</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Products</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/products/cleaning.html">Cleaning</a></li>
+                                            <li><a class="dropdown-item" href="/products/apparel.html">Apparel</a></li>
+                                            <li><a class="dropdown-item" href="/products/accessories.html">Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Equipment</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/equipment/lifts.html">Lifts</a></li>
+                                            <li><a class="dropdown-item" href="/equipment/trailers.html">Trailers</a></li>
+                                            <li><a class="dropdown-item" href="/equipment/flooring.html">Flooring</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Parts and Services</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/parts-and-services/parts.html">Parts</a></li>
+                                            <li><a class="dropdown-item" href="/parts-and-services/services.html">Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">About Us</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/about-us/testimonials.html">Testimonials</a></li>
+                                            <li><a class="dropdown-item" href="/about-us/contact-us.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="tel:6063059636" class="btn custom-btn d-lg-block d-none">Call Us</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-    </nav>
+    </header>
 
-<section class="hero-section" id="section_1">
-    <div class="section-overlay"></div>
-    <div class="container d-flex justify-content-center align-items-center">
-        <div class="row">
-            <div class="col-12 mt-auto mb-5 text-center">
-                <h1 class="text-white mb-5">Coming Soon</h1>
+    <!-- Main Content -->
+    <main>
+        <!-- Trailers & Installs Section -->
+        <section id="trailers-installs" class="section-padding">
+            <div class="container">
+                <h2>Trailers & Installs</h2>
+                <div class="boat-brands">
+                    <div class="brand-card">
+                        <h3>HydraFoam Installs</h3>
+                        <p>Premium Marine Decking</p>
+                        <a href="#hydrafoam-install" class="custom-btn">Latest Installs</a>
+                    </div>
+                    <div class="brand-card">
+                        <h3>Poly Lift</h3>
+                        <p>Quality Boat Lifts</p>
+                        <a href="#poly-lift-install" class="custom-btn">Latest Installs</a>
+                    </div>
+                    <div class="brand-card">
+                        <h3>Trailers</h3>
+                        <p>Custom-built, aluminum boat trailers </p>
+                        <a href="#evolution-trailers" class="custom-btn">Latest Trailers</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row justify-content-lg-between text-center">
-                <div class="social-share">
-                    <ul class="social-icon d-flex align-items-center justify-content-center">
-                        <li class="social-icon-item"><a href="https://www.facebook.com/profile.php?id=61559940673233" class="social-icon-link"><span class="bi-facebook"></span></a></li>
-                        <li class="social-icon-item"><a href="https://www.instagram.com/isonmarinellc/" class="social-icon-link"><span class="bi-instagram"></span></a></li>
-                        <li class="social-icon-item"><a href="https://x.com/isonmarinellc" class="social-icon-link"><span class="bi-twitter"></span></a></li>
+        </section>
+
+        <!-- HydraFoam Installs Section -->
+        <section id="hydrafoam-install" class="section-padding">
+            <div class="header-wrapper">
+                <h2>HydraFoam Installs</h2>
+            </div>
+            <div class="container">
+                <div class="boat-listings row">
+                    <!-- Boat 1: 2025 Cigarette Nighthawk "Ison Edition" (Images) -->
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-ciga-1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/installs/cigison/1.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/1.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/1.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/1.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/3.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/3.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/4.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/4.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/5.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/5.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/6.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/6.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/7.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/7.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/8.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/8.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/9.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/9.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/10.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/10.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/11.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/11.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/12.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/12.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/13.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/13.png" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/14.png" class="d-block gallery-image"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition'"
+                                                data-image="/images/installs/cigison/14.png" data-type="image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carousel-ciga-1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel-ciga-1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">2025 Cigarette Nighthawk Photos</h3>
+                                <p><strong>Hydrafoam Install</strong> before and after photos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Video: 2025 Cigarette Nighthawk "Ison Edition" (Videos with Thumbnails) -->
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-ciga-2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/installs/cigison/v1-thumb.png"
+                                                class="d-block gallery-video"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition' Video 1"
+                                                data-video="/images/installs/cigison/v1.mov" data-type="video">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/v2-thumb.png"
+                                                class="d-block gallery-video"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition' Video 2"
+                                                data-video="/images/installs/cigison/v2.mov" data-type="video">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/cigison/v3-thumb.png"
+                                                class="d-block gallery-video"
+                                                alt="2025 Cigarette Nighthawk 'Ison Edition' Video 3"
+                                                data-video="/images/installs/cigison/v3.mov" data-type="video">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carousel-ciga-2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel-ciga-2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">2025 Cigarette Nighthawk Video</h3>
+                                <p><strong>Hydrafoam Install</strong> install videos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more boat listings here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Poly Lift Installs Section -->
+        <section id="poly-lift-install" class="section-padding">
+            <div class="header-wrapper">
+                <h2>Poly Lift Installs</h2>
+            </div>
+            <div class="container">
+                <div class="boat-listings row">
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-gsx-1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/installs/polylift/1.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/1.jpg"
+                                                data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/polylift/2.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/2.jpg"
+                                                data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/polylift/3.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/3.jpg"
+                                                data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/polylift/4.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/4.jpg"
+                                                data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/polylift/5.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/5.jpg"
+                                                data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/polylift/6.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/6.jpg"
+                                                data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/polylift/7.jpg" class="d-block gallery-image"
+                                                alt="2025 GSX 280" data-image="/images/installs/polylift/7.jpg"
+                                                data-type="image">
+                                        </div>
+
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-gsx-1"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-gsx-1"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">Poly Lift Install Photos</h3>
+                                <p><strong>Call Us</strong> for your custom quote</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Evolution Trailers Section -->
+        <section id="evolution-trailers" class="section-padding">
+            <div class="header-wrapper">
+                <h2>Evolution Trailers</h2>
+            </div>
+            <div class="container">
+                <div class="boat-listings row">
+                    <div class="boat-listing col-md-6 col-lg-4 mb-4">
+                        <div class="card h-100">
+                            <div class="image-carousel">
+                                <div id="carousel-trailer-1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/images/installs/evolution/1.jpg" class="d-block gallery-image"
+                                                alt="Evolution Trailers Photos"
+                                                data-image="/images/installs/evolution/1.jpg" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/evolution/2.jpg" class="d-block gallery-image"
+                                                alt="Evolution Trailers Photos"
+                                                data-image="/images/installs/evolution/2.jpg" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/evolution/3.jpg" class="d-block gallery-image"
+                                                alt="Evolution Trailers Photos"
+                                                data-image="/images/installs/evolution/3.jpg" data-type="image">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/images/installs/evolution/4.jpg" class="d-block gallery-image"
+                                                alt="Evolution Trailers Photos"
+                                                data-image="/images/installs/evolution/4.jpg" data-type="image">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carousel-trailer-1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carousel-trailer-1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="card-body boat-details">
+                                <h3 class="card-title">Evoluton Trailers Photos</h3>
+                                <p><strong>Call Us</strong> for your custom quote</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Ison Marine</h2>
+                    </div>
+
+                    <div class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                        <ul class="social-icon d-flex justify-content-lg-end">
+
+                            <li class="social-icon-item">
+                                <a href="https://www.facebook.com/profile.php?id=61559940673233"
+                                    class="social-icon-link">
+                                    <span class="bi-facebook"></span>
+                                </a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://www.instagram.com/isonmarinellc/" class="social-icon-link">
+                                    <span class="bi-instagram"></span>
+                                </a>
+                            </li>
+
+                            <!-- <li class="social-icon-item">
+                                <a href="#" class="social-icon-link">
+                                    <span class="bi-youtube"></span>
+                                </a>
+                            </li> -->
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="index.html" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index.html#section_2" class="site-footer-link">About</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="boats.html" class="site-footer-link">Boats</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="installs.html" class="site-footer-link">Products</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="index.html#section_5" class="site-footer-link">Services</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="mailto:@tiffany@isonmarine.com" class="site-footer-link">Contact</a>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="video-wrap">
-        <video autoplay loop muted class="custom-video">
-            <source src="/video/isonmarineedition.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-</section>
 
-<footer class="site-footer">
-    <div class="site-footer-top">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 d-flex justify-content-center news-feed-container flex-wrap">
-                    <a href="https://www.speedonthewater.com/hydrafoam-making-strong-in-roads-with-go-fast-boat-builders-and-dealers/" class="me-4 text-white">Hydrafoam Article</a>
-                    <a href="https://boatlyfe.com/ison-marine-takes-on-hellkats-powerboats-catamaran-line/" class="me-4 text-white">Hellkats Line Article</a>
-                    <a href="https://www.speedonthewater.com/featured-boat-2025-glasstream-gsx-center-console/" class="me-4 text-white">Glasstream Feature</a>
-                    <a href="https://www.powerboatnation.com/kentucky-fortunes-rising/" class="me-4 text-white">Kentucky Fortunes Article</a>
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 090-080-0760" class="site-footer-link">
+                            606-305-8537
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@company.com" class="site-footer-link">
+                            tiffany@isonmarine.com
+                        </a>
+                    </p>
                 </div>
-                <div class="col-lg-6 col-12 text-center mt-3">
-                    <h2 class="text-white mb-lg-0">Ison Marine</h2>
-                </div>
-                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center mt-3">
-                    <ul class="social-icon d-flex justify-content-center">
-                        <li class="social-icon-item">
-                            <a href="https://www.facebook.com/profile.php?id=61559940673233" class="social-icon-link">
-                                <span class="bi-facebook"></span>
-                            </a>
-                        </li>
-                        <li class="social-icon-item">
-                            <a href="https://www.instagram.com/isonmarinellc/" class="social-icon-link">
-                                <span class="bi-instagram"></span>
-                            </a>
-                        </li>
-                        <li class="social-icon-item">
-                            <a href="https://x.com/isonmarinellc" class="social-icon-link">
-                                <span class="bi-twitter"></span>
-                            </a>
-                        </li>
-                    </ul>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Location</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Somerset, KY</p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+                        <span>Our Maps</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<!-- Fallback CDN for testing -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2025 MastaRyanCreations</p>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Terms & Conditions</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Privacy Policy</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image/Video Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Boat Media</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalMedia"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Select both image and video gallery items
+            const galleryItems = document.querySelectorAll('.gallery-image, .gallery-video');
+            console.log('Found gallery items:', galleryItems.length); // Debug: Check if items are found
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault(); // Prevent any default behavior
+                    console.log('Clicked item:', item); // Debug: Confirm click event
+
+                    const mediaType = item.getAttribute('data-type');
+                    const mediaSrc = mediaType === 'video' ? item.getAttribute('data-video') : item.getAttribute('data-image');
+                    const modalMedia = document.getElementById('modalMedia');
+
+                    // Clear previous content
+                    modalMedia.innerHTML = '';
+
+                    if (mediaType === 'video') {
+                        console.log('Opening video:', mediaSrc); // Debug: Confirm video source
+                        const video = document.createElement('video');
+                        video.setAttribute('controls', 'controls');
+                        video.setAttribute('style', 'width: 100%; height: auto;');
+                        const source = document.createElement('source');
+                        source.setAttribute('src', mediaSrc);
+                        source.setAttribute('type', 'video/mp4');
+                        video.appendChild(source);
+                        video.appendChild(document.createTextNode('Your browser does not support the video tag.'));
+                        modalMedia.appendChild(video);
+                    } else {
+                        console.log('Opening image:', mediaSrc); // Debug: Confirm image source
+                        const img = document.createElement('img');
+                        img.setAttribute('src', mediaSrc);
+                        img.setAttribute('style', 'width: 100%; height: auto;');
+                        img.setAttribute('alt', 'Boat Image');
+                        modalMedia.appendChild(img);
+                    }
+
+                    const imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+                    imageModal.show();
+                });
+            });
+
+            // Smooth Scroll for "See our inventory" Links
+            const navLinks = document.querySelectorAll('.click-scroll');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    } else {
+                        window.location.href = this.getAttribute('href');
+                    }
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>

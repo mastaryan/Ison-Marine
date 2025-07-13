@@ -2,34 +2,17 @@
 <html lang="en">
 
 <head>
-    <!-- Start cookieyes banner -->
-    <script id="cookieyes" type="text/javascript"
-        src="https://cdn-cookieyes.com/client_data/f0a834a87fb4a6b88196eddc/script.js"></script>
-    <!-- End cookieyes banner -->
-     
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installs - Ison Marine</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ison Marine Boat Brands</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
     <link href="css/templatemo-festava-live.css" rel="stylesheet">
+    <!-- Fallback CDN for testing -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        /* Fixed size for carousel images */
-        .carousel-item img {
-            width: 100%;
-            height: 300px;
-            /* Fixed height for consistency */
-            object-fit: cover;
-            /* Maintains aspect ratio without distortion */
-        }
-
-        /* Modal image styling */
-        #modalImage {
-            width: 100%;
-            height: auto;
-            /* Displays original size in modal */
-        }
-    </style>
 </head>
 
 <body>
@@ -38,28 +21,76 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="navbar navbar-expand-lg navbar-solid">
-                        <a class="navbar-brand" href="index.html">Ison Marine</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
-                                <li class="nav-item"><a class="nav-link click-scroll"
-                                        href="index.html#section_1">Home</a></li>
-                                <li class="nav-item"><a class="nav-link click-scroll"
-                                        href="index.html#section_2">About</a></li>
-                                <li class="nav-item"><a class="nav-link click-scroll"
-                                        href="index.html#section_3">Boats</a></li>
-                                <li class="nav-item"><a class="nav-link click-scroll"
-                                        href="index.html#section_4">Products</a></li>
-                                <li class="nav-item"><a class="nav-link click-scroll"
-                                        href="index.html#section_5">Services</a></li>
-                                <li class="nav-item"><a class="nav-link click-scroll"
-                                        href="index.html#section_6">Events</a></li>
-                            </ul>
-                            <a href="tel:6063059636" class="btn custom-btn d-lg-block d-none">Call Us</a>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <div class="container">
+                            <a class="navbar-brand" href="/index.html">Ison Marine</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Boats</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
+                                            <li><a class="dropdown-item" href="/boats/sold-boats.html">Sold Boats</a></li>
+                                            <li><a class="dropdown-item" href="/financing.html">Financing</a></li>
+                                            <li><a class="dropdown-item" href="/boats/consignment.html">Consignment</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Brands</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/brands/all-brands.html">All Brands</a></li>
+                                            <li><a class="dropdown-item" href="/brands/glasstream.html">Glasstream</a></li>
+                                            <li><a class="dropdown-item" href="/brands/gsx.html">GSX</a></li>
+                                            <li><a class="dropdown-item" href="/brands/hellkat.html">Hellkat</a></li>
+                                            <li><a class="dropdown-item" href="/brands/cigarette.html">Cigarette</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Products</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/products/cleaning.html">Cleaning</a></li>
+                                            <li><a class="dropdown-item" href="/products/apparel.html">Apparel</a></li>
+                                            <li><a class="dropdown-item" href="/products/accessories.html">Accessories</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Equipment</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/equipment/lifts.html">Lifts</a></li>
+                                            <li><a class="dropdown-item" href="/equipment/trailers.html">Trailers</a></li>
+                                            <li><a class="dropdown-item" href="/equipment/flooring.html">Flooring</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">Parts and Services</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/parts-service/parts.html">Parts</a></li>
+                                            <li><a class="dropdown-item" href="/parts-service/services.html">Services</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">About Us</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="/about-us/testimonials.html">Testimonials</a></li>
+                                            <li><a class="dropdown-item" href="/about-us/contact-us.html">Contact Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="tel:6063059636" class="btn custom-btn d-lg-block d-none">Call Us</a>
+                            </div>
                         </div>
                     </nav>
                 </div>
