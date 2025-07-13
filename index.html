@@ -14,18 +14,6 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
         <link href="css/templatemo-festava-live.css" rel="stylesheet">
-        <style>
-            /* Fix for mobile dropdown toggle */
-            .dropdown-toggle::after {
-                display: none;
-            }
-            .dropdown-menu {
-                display: none;
-            }
-            .dropdown.show .dropdown-menu {
-                display: block;
-            }
-        </style>
     </head>
     
     <body>
@@ -43,7 +31,8 @@
                                 <a class="nav-link" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button">Boats</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Boats</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
                                     <li><a class="dropdown-item" href="/boats/sold.html">Sold Boats</a></li>
@@ -52,7 +41,8 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button">Brands</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Brands</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/boats/all-brands.html">All Brands</a></li>
                                     <li><a class="dropdown-item" href="/boats/glasstream.html">Glasstream</a></li>
@@ -62,7 +52,8 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button">Products</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Products</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/products/cleaning.html">Cleaning</a></li>
                                     <li><a class="dropdown-item" href="/products/apparel.html">Apparel</a></li>
@@ -70,7 +61,8 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button">Equipment</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Equipment</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/equipment/lifts.html">Lifts</a></li>
                                     <li><a class="dropdown-item" href="/equipment/trailers.html">Trailers</a></li>
@@ -78,14 +70,16 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button">Parts and Services</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Parts and Services</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/parts-service/parts.html">Parts</a></li>
                                     <li><a class="dropdown-item" href="/parts-service/services.html">Services</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button">About Us</a>
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">About Us</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="/about/testimonials.html">Testimonials</a></li>
                                     <li><a class="dropdown-item" href="/about/contact.html">Contact Us</a></li>
@@ -552,23 +546,8 @@
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.querySelectorAll('.dropdown-toggle').forEach(function (dropdown) {
-            dropdown.addEventListener('click', function (e) {
-                e.preventDefault();
-                let parent = this.parentElement;
-                parent.classList.toggle('show');
-                parent.querySelector('.dropdown-menu').classList.toggle('show');
-            });
-        });
-    </script>
 
-        <!-- CSS fix remains -->
-        <style>
-            .dropdown-menu.show {
-                display: block;
-            }
-        </style>
+
 
     </body>
     </html>
