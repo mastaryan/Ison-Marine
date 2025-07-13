@@ -1314,3 +1314,11 @@ strong {
 .dropdown-menu {
   z-index: 1050; /* Higher than navbar to prevent overlap issues */
 }
+@media (max-width: 991px) {
+  .navbar-nav .dropdown-menu {
+    display: none;
+  }
+  .navbar-nav .show .dropdown-menu {
+    display: block;
+  }
+}
