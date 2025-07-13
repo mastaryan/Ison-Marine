@@ -20,6 +20,17 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/bootstrap-icons.css" rel="stylesheet">
         <link href="css/templatemo-festava-live.css" rel="stylesheet">
+        <style>
+            /* Force dropdowns to show on click in mobile */
+            @media (max-width: 991px) {
+                .navbar-nav .dropdown-menu {
+                    display: none;
+                }
+                .navbar-nav .dropdown.show .dropdown-menu {
+                    display: block;
+                }
+            }
+        </style>
     </head>
 
     <body>
@@ -54,8 +65,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">Boats</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/boats/current-inventory.html">Current
-                                            Inventory</a></li>
+                                    <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
                                     <li><a class="dropdown-item" href="/boats/sold.html">Sold Boats</a></li>
                                     <li><a class="dropdown-item" href="/financing.html">Financing</a></li>
                                     <li><a class="dropdown-item" href="/boats/consignment.html">Consignment</a></li>
@@ -130,7 +140,7 @@
                             class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row justify-content-lg-between text-center">
                             <div class="date-wrap">
                                 <h5 class="text-white">
-                                    <i class="custom-icon bi-watch me-2"></i>
+                                    <i class="custom-icon bi-clock me-2"></i>
                                     Servicing KY & TN
                                 </h5>
                             </div>
