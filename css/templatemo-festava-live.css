@@ -1375,3 +1375,45 @@ nav ul li ul li a {
       padding-left: 30px;
   }
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards */
+}
+
+.gallery-item {
+  width: 250px; /* Fixed width for each card, adjust as needed */
+  text-align: center;
+  border: 1px solid #ddd; /* Optional: for visual card boundaries */
+  border-radius: 8px; /* Optional: rounded corners */
+  overflow: hidden; /* Prevents content from spilling out */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.gallery-item img {
+  width: 100%; /* Makes image take full width of the card */
+  height: 150px; /* Fixed height, adjust as needed */
+  object-fit: contain; /* Ensures image fits without cropping, preserving aspect ratio */
+  display: block; /* Removes any bottom gap */
+}
+
+.gallery-item h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.custom-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
+}
