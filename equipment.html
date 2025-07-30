@@ -1,190 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore equipment available at Ison Marine">
-    <meta name="keywords" content="boat equipment, Ison Marine, PolyLift, HydraFoam, Evolution Trailers">
-    <title>Ison Marine - Equipment</title>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-KX44G53D');</script>
-    <!-- End Google Tag Manager -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
-        <link href="/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/css/bootstrap-icons.css" rel="stylesheet">
-        <link href="/css/templatemo-festava-live.css" rel="stylesheet">
-        <!-- Open Graph Meta Tags -->
-<meta property="og:type" content="website" />
-<meta property="og:title" content="Marine Equipment | Ison Marine Kentucky" />
-<meta property="og:description" content="Shop marine equipment at Ison Marine in Somerset, KY. We carry lifts, trailers, flooring and more for performance boats." />
-<meta property="og:image" content="https://isonmarine.com/images/og-cover.jpg" />
-<meta property="og:url" content="https://isonmarine.com/equipment.html" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marine Equipment | Ison Marine Kentucky</title>
+  <meta name="description" content="Shop marine equipment at Ison Marine in Somerset, KY. We carry lifts, trailers, flooring, and more for performance boats." />
+  <link rel="canonical" href="https://isonmarine.com/equipment.html" />
 
-<!-- Twitter Card Tags -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Marine Equipment | Ison Marine Kentucky" />
-<meta name="twitter:description" content="Shop marine equipment at Ison Marine in Somerset, KY. We carry lifts, trailers, flooring and more for performance boats." />
-<meta name="twitter:image" content="https://isonmarine.com/images/og-cover.jpg" />
+  <!-- Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="/css/templatemo-festava-live.css" rel="stylesheet">
 
-        <!-- Fallback CDN for testing -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styling Fixes -->
+  <style>
+    /* Gallery styles */
+    .gallery {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .gallery-item {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      flex: 1 1 30%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 300px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .gallery-item img.fill-img {
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .gallery-footer {
+      margin-top: 15px;
+    }
+
+    /* Footer styles */
+    .site-footer-links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 0;
+    }
+
+    .site-footer-links li {
+      display: inline-block;
+    }
+
+    .site-footer-link {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .site-footer-link:hover {
+      text-decoration: underline;
+    }
+
+    .seo-hidden { display: none !important; }
+  </style>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marine Equipment | Ison Marine Kentucky" />
+  <meta property="og:description" content="Shop marine equipment at Ison Marine in Somerset, KY. We carry lifts, trailers, flooring, and more for performance boats." />
+  <meta property="og:image" content="https://isonmarine.com/images/og-cover.jpg" />
+  <meta property="og:url" content="https://isonmarine.com/equipment.html" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Marine Equipment | Ison Marine Kentucky" />
+  <meta name="twitter:description" content="Shop marine equipment at Ison Marine in Somerset, KY. We carry lifts, trailers, flooring, and more for performance boats." />
+  <meta name="twitter:image" content="https://isonmarine.com/images/og-cover.jpg" />
+
+  <!-- Breadcrumb JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://isonmarine.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Equipment", "item": "https://isonmarine.com/equipment.html" }
+    ]
+  }
+  </script>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX44G53D"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRLR20Q2H3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-RRLR20Q2H3');
-</script>
-    <header class="site-header">
-        <div class="container">
-            <h1 class="navbar-brand">Ison Marine</h1>
-            <nav class="navbar navbar-expand-lg">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Boats</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
-                                <li><a class="dropdown-item" href="/boats/sold-boats.html">Sold Boats</a></li>
-                                <li><a class="dropdown-item" href="/financing.html">Financing</a></li>
-                                <li><a class="dropdown-item" href="/boats/consignment.html">Consignment</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Brands</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/brands/all-brands.html">All Brands</a></li>
-                                <li><a class="dropdown-item" href="/brands/glasstream.html">Glasstream</a></li>
-                                <li><a class="dropdown-item" href="/brands/gsx.html">GSX</a></li>
-                                <li><a class="dropdown-item" href="/brands/hellkat.html">Hellkat</a></li>
-                                <li><a class="dropdown-item" href="/brands/cigarette.html">Cigarette</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Products</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/products/cleaning.html">Cleaning</a></li>
-                                <li><a class="dropdown-item" href="/products/apparel.html">Apparel</a></li>
-                                <li><a class="dropdown-item" href="/products/accessories.html">Accessories</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Equipment</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/equipment.html">Lifts</a></li>
-                                <li><a class="dropdown-item" href="/equipment.html">Trailers</a></li>
-                                <li><a class="dropdown-item" href="/equipment.html">Flooring</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">Parts and Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/parts-service/parts.html">Parts</a></li>
-                                <li><a class="dropdown-item" href="/parts-service/services.html">Services</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">About Us</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/about-us/testimonials.html">Testimonials</a></li>
-                                <li><a class="dropdown-item" href="/about-us/contact-us.html">Contact Us</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="navbar-brand">Ison Marine</h1>
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Boats</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/boats/current-inventory.html">Current Inventory</a></li>
+                <li><a class="dropdown-item" href="/boats/sold-boats.html">Sold Boats</a></li>
+                <li><a class="dropdown-item" href="/financing.html">Financing</a></li>
+                <li><a class="dropdown-item" href="/boats/consignment.html">Consignment</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/brands/all-brands.html">All Brands</a></li>
+                <li><a class="dropdown-item" href="/brands/glasstream.html">Glasstream</a></li>
+                <li><a class="dropdown-item" href="/brands/gsx.html">GSX</a></li>
+                <li><a class="dropdown-item" href="/brands/hellkat.html">Hellkat</a></li>
+                <li><a class="dropdown-item" href="/brands/cigarette.html">Cigarette</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/products/cleaning.html">Cleaning</a></li>
+                <li><a class="dropdown-item" href="/products/apparel.html">Apparel</a></li>
+                <li><a class="dropdown-item" href="/products/accessories.html">Accessories</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Equipment</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/equipment.html">Lifts</a></li>
+                <li><a class="dropdown-item" href="/equipment.html">Trailers</a></li>
+                <li><a class="dropdown-item" href="/equipment.html">Flooring</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Parts and Services</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/parts-service/parts.html">Parts</a></li>
+                <li><a class="dropdown-item" href="/parts-service/services.html">Services</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/about-us/testimonials.html">Testimonials</a></li>
+                <li><a class="dropdown-item" href="/about-us/contact-us.html">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="section-padding">
-            <div class="container">
-                <h2>Equipment</h2>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="/images/artists/poly-lift.jpg" alt="PolyLift Boat Lifts">
-                        <h3>PolyLift Boat Lifts</h3>
-                        <a href="#" class="custom-btn">View Details</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/artists/hydrafoam-logo.png" alt="HydraFoam Flooring">
-                        <h3>HydraFoam Flooring</h3>
-                        <a href="#" class="custom-btn">View Details</a>
-                    </div>
-                    <div class="gallery-item">
-                        <img src="/images/artists/evolution-trailers.jpg" alt="Evolution Trailers">
-                        <h3>Evolution Trailers</h3>
-                        <a href="#" class="custom-btn">View Details</a>
-                    </div>
-                </div>
+  <main>
+    <section class="section-padding">
+      <div class="container">
+        <h1>Equipment</h1>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img src="/images/artists/poly-lift.jpg" alt="PolyLift Boat Lifts" class="fill-img">
+            <div class="gallery-footer">
+              <a href="#" class="custom-btn">Poly Lift</a>
             </div>
-        </section>
-        <p class="seo-hidden">
-            Shop <a href="/boats/current-inventory.html">Current Inventory</a> or 
-            <a href="/brands.html">all brands</a>. 
-            Need repairs? Visit our <a href="/parts-service.html">Parts & Service</a> 
-            department in Somerset, KY.
-        </p>
-        
-    </main>
-
-    <footer class="site-footer">
-        <div class="site-footer-top">
-            <div class="container">
-                <p>Links</p>
-                <ul class="site-footer-links">
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/index.html">Home</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/boats/current-inventory.html">Boats</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/brands.html">Brands</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/products.html">Products</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/equipment.html">Equipment</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/financing.html">Financing</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/parts-service.html">Parts & Service</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/about.html">About Us</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="/about-us/contact-us.html">Contact</a></li>
-                </ul>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/artists/hydrafoam-logo.png" alt="HydraFoam Flooring">
+            <div class="gallery-footer">
+              <a href="#" class="custom-btn">HydraFoam</a>
             </div>
+          </div>
+          <div class="gallery-item">
+            <img src="/images/artists/evolution-trailers.jpg" alt="Evolution Trailers" class="fill-img">
+            <div class="gallery-footer">
+              <a href="#" class="custom-btn">Trailers</a>
+            </div>
+          </div>
         </div>
-        <div class="site-footer-bottom">
-            <div class="container">
-                <p class="copyright-text">Copyright © 2025 MastaRyanCreations</p>
-                <ul class="site-footer-links">
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="#">Terms & Conditions</a></li>
-                    <li class="site-footer-link-item"><a class="site-footer-link" href="#">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-<!-- Fallback CDN for testing -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script data-account="kE7HhZfU5B" src="https://cdn.userway.org/widget.js"></script>
+      </div>
+    </section>
 
+    <p class="seo-hidden">
+      Ison Marine carries a wide selection of marine equipment including 
+      <a href="#">Poly Lift boat lifts</a>, <a href="#">HydraFoam boat flooring</a>, and 
+      <a href="#">Evolution Trailers</a>.  
+      Browse our <a href="/boats/current-inventory.html">current inventory</a> or 
+      <a href="/brands.html">all brands</a> to complete your boating needs.  
+      Need professional support? Visit our <a href="/parts-service.html">Parts & Service department</a> 
+      for installation, warranty work, and full-service marine repair.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-top">
+      <div class="container">
+        <ul class="site-footer-links">
+          <li><a class="site-footer-link" href="/index.html">Home</a></li>
+          <li><a class="site-footer-link" href="/boats/current-inventory.html">Boats</a></li>
+          <li><a class="site-footer-link" href="/brands.html">Brands</a></li>
+          <li><a class="site-footer-link" href="/products.html">Products</a></li>
+          <li><a class="site-footer-link" href="/equipment.html">Equipment</a></li>
+          <li><a class="site-footer-link" href="/financing.html">Financing</a></li>
+          <li><a class="site-footer-link" href="/parts-service.html">Parts & Service</a></li>
+          <li><a class="site-footer-link" href="/about.html">About Us</a></li>
+          <li><a class="site-footer-link" href="/about-us/contact-us.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <div class="container d-flex justify-content-between">
+        <p class="copyright-text mb-0">Copyright © 2025 MastaRyanCreations</p>
+        <ul class="site-footer-links">
+          <li><a href="#" class="site-footer-link">Terms & Conditions</a></li>
+          <li><a href="#" class="site-footer-link">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/bootstrap.bundle.min.js" defer></script>
+  <script data-account="kE7HhZfU5B" src="https://cdn.userway.org/widget.js" defer></script>
 </body>
 </html>
