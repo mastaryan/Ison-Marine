@@ -1418,12 +1418,9 @@ nav ul li ul li a {
   background-color: #0056b3;
 }
 .seo-hidden {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+  display: none !important;
 }
+
 
 .breadcrumb-nav {
   background: transparent;
