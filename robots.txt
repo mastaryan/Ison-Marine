@@ -1,3 +1,12 @@
 User-agent: *
+# Allow everything
 Allow: /
+
+# Block search result pages (thin content)
+Disallow: /*?s=
+
+# Block duplicate/tracking parameters (if any exist)
+Disallow: /*?utm_*
+
+# Sitemap reference
 Sitemap: https://isonmarine.com/sitemap.xml
