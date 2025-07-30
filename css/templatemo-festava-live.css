@@ -1417,3 +1417,28 @@ nav ul li ul li a {
 .custom-btn:hover {
   background-color: #0056b3;
 }
+.seo-hidden {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.breadcrumb-nav {
+  background: transparent;
+  margin: 10px 0;
+}
+.breadcrumb {
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">";
+}
+.breadcrumb a {
+  color: #ffffff;
+  text-decoration: underline;
+}
