@@ -1439,3 +1439,23 @@ nav ul li ul li a {
   color: #ffffff;
   text-decoration: underline;
 }
+.gallery-thumb {
+  height: 200px;       /* consistent height */
+  width: auto;         /* maintain aspect ratio */
+  object-fit: cover;   /* crop edges if needed */
+  border-radius: 8px;  /* optional rounded corners */
+  display: block;
+}
+.gallery {
+  gap: 15px;
+}
+.gallery-item {
+  flex: 1 1 calc(20% - 15px); /* 5 items per row with spacing */
+  max-width: calc(20% - 15px);
+}
+@media (max-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 15px); /* 2 items per row on mobile */
+    max-width: calc(50% - 15px);
+  }
+}
