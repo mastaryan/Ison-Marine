@@ -3,7 +3,7 @@
   <url>
     <loc>https://www.isonmarine.com/parts-service/parts.html</loc>
     <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
@@ -14,18 +14,18 @@
   </url>
   <url>
     <loc>https://isonmarine.com/</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://isonmarine.com/products.html</loc>
+    <loc>https://isonmarine.com/parts-service.html</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://isonmarine.com/parts-service.html</loc>
+    <loc>https://isonmarine.com/products.html</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -39,12 +39,18 @@
   <url>
     <loc>https://isonmarine.com/parts-service/parts.html</loc>
     <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/about-us/testimonials.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://isonmarine.com/boats/consignment.html</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
@@ -68,42 +74,12 @@
   </url>
   <url>
     <loc>https://isonmarine.com/about-us/contact-us.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/brands/gsx.html</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://isonmarine.com/about.html</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.isonmarine.com/boats/2025-cigarette-41-nighthawk.html</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://isonmarine.com/boats/current-inventory.html</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.isonmarine.com/boats/2025-glasstream-280.html</loc>
-    <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://isonmarine.com/equipment.html</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
@@ -115,56 +91,98 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.isonmarine.com/equipment/trailers.html</loc>
+    <loc>https://isonmarine.com/about.html</loc>
     <lastmod>2025-07-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.isonmarine.com/equipment/flooring.html</loc>
+    <loc>https://isonmarine.com/equipment.html</loc>
     <lastmod>2025-07-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.isonmarine.com/boats/2025-cigarette-41-nighthawk.html</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://isonmarine.com/boats/current-inventory.html</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://isonmarine.com/financing.html</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.isonmarine.com/equipment/trailers.html</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://isonmarine.com/boats/sold-boats.html</loc>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.isonmarine.com/equipment/lifts.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.isonmarine.com/equipment/flooring.html</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://isonmarine.com/boats/2025-gsx-36-ls.html</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://isonmarine.com/boats/2025-glasstream-280.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/boats/2025-cigarette-41-nighthawk.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/boats/2025-hellkat-32.html</loc>
     <lastmod>2025-07-30</lastmod>
-    <changefreq>daily</changefreq>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/equipment/flooring.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/equipment/lifts.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/equipment/trailers.html</loc>
-    <lastmod>2025-07-30</lastmod>
+    <lastmod>2025-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
