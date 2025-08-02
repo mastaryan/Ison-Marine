@@ -1,12 +1,14 @@
 User-agent: *
-# Allow everything
 Allow: /
 
-# Block search result pages (thin content)
+# Disallow internal search result pages
 Disallow: /*?s=
 
-# Block duplicate/tracking parameters (if any exist)
+# Disallow tracking parameters
 Disallow: /*?utm_*
 
-# Sitemap reference
+# Suppress unnecessary crawl attempts for nonexistent files
+Disallow: /llms.txt
+
+# Sitemap location
 Sitemap: https://isonmarine.com/sitemap.xml
