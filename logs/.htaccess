@@ -1,0 +1,5 @@
+# Apache 2.4+
+Require all denied
+
+# If you’re on older Apache (2.2), also include:
+# Deny from all

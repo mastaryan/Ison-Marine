@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Processing Unsubscribe…</title>
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; padding: 2rem; }
+    .card { max-width: 600px; margin: 0 auto; border: 1px solid #eee; border-radius: 12px; padding: 1.5rem; box-shadow: 0 1px 10px rgba(0,0,0,.05); }
+    h1 { font-size: 1.25rem; margin: 0 0 .5rem; }
+    p { margin: .25rem 0; }
+    .muted { color: #666; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Unsubscribing…</h1>
+    <p class="muted">Please wait while we process your request.</p>
+  </div>
+
+  <form id="hidden-form" action="https://formspree.io/f/mpwlqpor" method="POST">
+    <input type="hidden" name="action" value="unsubscribe">
+    <input type="hidden" name="email" value="">
+    <input type="hidden" name="ip_address" value="">
+    <input type="hidden" name="user_agent" value="">
+    <input type="hidden" name="referer" value="">
+    <input type="hidden" name="timestamp_utc" value="">
+    <input type="hidden" name="source" value="signatureLink">
+    <input type="hidden" name="hmac_valid" value="false">
+  </form>
+
+  <script>
+    (function() {
+      const params = new URLSearchParams(window.location.search);
+      const emailParam = params.get('email') || params.get('e') || "";
+      const token = params.get('token') || "";
+      const email = emailParam.trim();
+
+      const form = document.getElementById('hidden-form');
+      const set = (n,v) => { const el = form.querySelector(`[name="${n}"]`); if (el) el.value = v; };
+
+      set('email', email);
+      set('user_agent', navigator.userAgent || '');
+      set('referer', document.referrer || '');
+      set('timestamp_utc', new Date().toISOString());
+
+      // Validate HMAC client-side (informational only). 
+      // In real deployment, do validation server-side.
+      function b64encode(str) {
+        return btoa(String.fromCharCode.apply(null, new Uint8Array(str)))
+          .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+      }
+
+      async function validateAndSubmit() {
+        try {
+          const enc = new TextEncoder();
+          const keyData = enc.encode("SuperSecretKey123!"); // must match server key
+          const cryptoKey = await crypto.subtle.importKey("raw", keyData, { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+          const sigBuf = await crypto.subtle.sign("HMAC", cryptoKey, enc.encode(email));
+          const sigB64 = b64encode(sigBuf);
+          if (sigB64 === token) set('hmac_valid','true');
+        } catch(e){}
+        
+        fetch('https://api.ipify.org?format=json', { cache: 'no-store' })
+          .then(r => r.json()).then(d => { set('ip_address', d && d.ip ? d.ip : 'Unknown'); })
+          .catch(() => { set('ip_address','Unknown'); })
+          .finally(() => {
+            fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+              .catch(()=>{})
+              .finally(() => { window.location.replace('unsubscribed.html'); });
+          });
+      }
+
+      validateAndSubmit();
+    })();
+  </script>
+</body>
+</html>
