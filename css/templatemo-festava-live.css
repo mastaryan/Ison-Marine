@@ -1470,3 +1470,44 @@ nav ul li ul li a {
   }
 }
 
+/* ---- Bootstrap navbar dropdown fix (scoped to .navbar only) ---- */
+.navbar nav ul li ul,
+.navbar ul li ul {
+  display: none !important;
+  position: static !important;
+  box-shadow: none !important;
+  min-width: 0 !important;
+}
+.navbar .dropdown-menu.show { display: block !important; visibility: visible; opacity: 1; }
+
+@media (max-width: 991.98px) {
+  .navbar .dropdown-menu { width: 100%; border: 0; padding: 0.25rem 0; }
+  .navbar .dropdown-item { color: var(--white-color, #fff); padding: 10px 20px; }
+}
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu { display: block; }
+}
+/* ---- UserWay launcher: force bottom-left (all viewports) ---- */
+#userwayAccessibilityIcon,
+#userway-widget,
+.userway_widget,
+.uwy .uwy-toggle,
+.uwy .uwy-launcher {
+  position: fixed !important;
+  left: 16px !important;
+  right: auto !important;
+  bottom: 16px !important;
+  top: auto !important;
+  z-index: 1049 !important; /* under Bootstrap modals (1050), above navbar */
+}
+
+/* If you want extra clearance when the mobile menu is open, nudge it down slightly */
+@media (max-width: 991.98px) {
+  .navbar-collapse.show ~ #userwayAccessibilityIcon,
+  .navbar-collapse.show ~ #userway-widget,
+  .navbar-collapse.show ~ .userway_widget,
+  .navbar-collapse.show ~ .uwy .uwy-toggle,
+  .navbar-collapse.show ~ .uwy .uwy-launcher {
+    bottom: 24px !important;
+  }
+}
