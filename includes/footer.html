@@ -92,3 +92,16 @@
     .site-footer .row > div { text-align: center !important; margin-bottom: 2rem; }
   }
 </style>
+
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+<script defer>
+  const lightbox = GLightbox({
+    selector: '.glightbox',
+    touchNavigation: true,
+    loop: true,
+    keyboardNavigation: true,
+    closeOnOutsideClick: true,
+    width: '90vw',
+    height: '90vh'
+  });
+</script>
