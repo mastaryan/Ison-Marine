@@ -12,3 +12,7 @@ Disallow: /llms.txt
 
 # Sitemap location
 Sitemap: https://isonmarine.com/sitemap.xml
+
+User-agent: *
+Allow: /
+Sitemap: https://isonmarine.com/sitemap.xml
