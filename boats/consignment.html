@@ -20,10 +20,30 @@
   <link rel="shortcut icon" href="/images/favicon/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="/images/favicon/site.webmanifest" />
+
+  <style>
+    /* Force all consignment cards to be the same height and align perfectly */
+    .consignment-card {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .consignment-card img {
+      height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .consignment-card .card-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .consignment-card p {
+      flex-grow: 1;
+    }
+  </style>
 </head>
 <body>
-
-<!--#include virtual="/includes/header.html" -->
 
 <main class="pt-5 mt-5">
   <section class="py-5">
@@ -31,59 +51,59 @@
       <h1 class="text-center mb-5">Consignment Inventory</h1>
       <p class="lead text-center mb-5">Hand-selected pre-owned and new performance boats available on consignment.</p>
 
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
 
         <!-- 2024 Sportsman 232 Open -->
         <div class="col">
-          <div class="text-center">
-            <img src="/images/boats/sportsman232/1.jpg" class="img-fluid rounded shadow mb-4" alt="2024 Sportsman 232 Open" style="max-height: 300px; object-fit: cover;">
+          <div class="text-center consignment-card">
+            <img src="/images/boats/sportsman232/1.jpg" class="img-fluid shadow mb-4" alt="2024 Sportsman 232 Open">
             <h3>2024 Sportsman 232 Open</h3>
-            <p class="fw-bold text-primary fs-4">$114,999</p>
-            <p>One-owner, immaculately maintained fresh water boat and ready for the water! Ready to make a deal!</p>
+            <p class="fw-bold text-primary fs-4 mb-2">$114,999</p>
+            <p class="mb-4">One-owner, immaculately maintained fresh water boat and ready for the water! Ready to make a deal!</p>
             <a href="/boats/2024-sportsman-232.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
 
         <!-- Outerlimits SV29 -->
         <div class="col">
-          <div class="text-center">
-            <img src="/images/boats/sv29/sv29-1.jpg" class="img-fluid rounded shadow mb-4" alt="Outerlimits SV29" style="max-height: 300px; object-fit: cover;">
+          <div class="text-center consignment-card">
+            <img src="/images/boats/sv29/sv29-1.jpg" class="img-fluid shadow mb-4" alt="Outerlimits SV29">
             <h3>Outerlimits SV29</h3>
-            <p class="fw-bold text-primary fs-4">$165,000</p>
-            <p>The SV29 is a true offshore vee bottom, proven to be a world champion on the race course.</p>
+            <p class="fw-bold text-primary fs-4 mb-2">$165,000</p>
+            <p class="mb-4">The SV29 is a true offshore vee bottom, proven to be a world champion on the race course.</p>
             <a href="/boats/outerlimits-sv29.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
 
         <!-- 2025 GSX 32 LS -->
         <div class="col">
-          <div class="text-center">
-            <img src="/images/boats/gsx/gsx32ls/1.webp" class="img-fluid rounded shadow mb-4" alt="2025 GSX 32 LS" style="max-height: 300px; object-fit: cover;">
+          <div class="text-center consignment-card">
+            <img src="/images/boats/gsx/gsx32ls/1.webp" class="img-fluid shadow mb-4" alt="2025 GSX 32 LS">
             <h3>'25 GSX 32 LS</h3>
-            <p class="fw-bold text-primary fs-4">$357,062</p>
-            <p>Quad Mercury 400 Verado power — fully loaded luxury center console.</p>
+            <p class="fw-bold text-primary fs-4 mb-2">$357,062</p>
+            <p class="mb-4">Quad Mercury 400 Verado power — fully loaded luxury center console.</p>
             <a href="/boats/2025-gsx-32-ls.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
 
         <!-- 2025 Glasstream 240 CCX -->
         <div class="col">
-          <div class="text-center">
-            <img src="/images/boats/glasstream/240/1.webp" class="img-fluid rounded shadow mb-4" alt="2025 Glasstream 240 CCX" style="max-height: 300px; object-fit: cover;">
+          <div class="text-center consignment-card">
+            <img src="/images/boats/glasstream/240/1.webp" class="img-fluid shadow mb-4" alt="2025 Glasstream 240 CCX">
             <h3>2025 Glasstream 240 CCX</h3>
-            <p class="fw-bold text-primary fs-4">$77,610</p>
-            <p>The all new Glasstream 240 CCX is the ultimate do anything boat that will fit into most anybody’s budget.</p>
+            <p class="fw-bold text-primary fs-4 mb-2">$77,610</p>
+            <p class="mb-4">The all new Glasstream 240 CCX is the ultimate do anything boat that will fit into most anybody’s budget.</p>
             <a href="/boats/2025-glasstream-240-ccx.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
 
         <!-- 2025 Glasstream 28 Pro -->
         <div class="col">
-          <div class="text-center">
-            <img src="/images/boats/glasstream/28pro/1.webp" class="img-fluid rounded shadow mb-4" alt="2025 Glasstream 28 Pro" style="max-height: 300px; object-fit: cover;">
+          <div class="text-center consignment-card">
+            <img src="/images/boats/glasstream/28pro/1.webp" class="img-fluid shadow mb-4" alt="2025 Glasstream 28 Pro">
             <h3>2025 Glasstream 28 Pro</h3>
-            <p class="fw-bold text-primary fs-4">$168,028</p>
-            <p>The 280 PRO sets a new industry standard for a family-friendly coastal fishing vessel.</p>
+            <p class="fw-bold text-primary fs-4 mb-2">$168,028</p>
+            <p class="mb-4">The 280 PRO sets a new industry standard for a family-friendly coastal fishing vessel.</p>
             <a href="/boats/2025-glasstream-28-pro.html" class="btn btn-primary">View Details</a>
           </div>
         </div>
