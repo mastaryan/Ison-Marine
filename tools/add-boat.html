@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ison Marine — Boat Inventory Helper</title>
+<style>
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 860px; margin: 0 auto; padding: 24px; background: #f6f8fb; color: #1c2733; }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 2px solid #0d6efd; padding-bottom: 4px; }
+  .card { background: #fff; border: 1px solid #dbe3ec; border-radius: 10px; padding: 18px; margin: 14px 0; }
+  label { display: block; font-weight: 600; margin: 10px 0 4px; font-size: .9rem; }
+  input[type=text], input[type=number], select, textarea { width: 100%; padding: 8px 10px; border: 1px solid #c4cfdb; border-radius: 6px; font-size: .95rem; box-sizing: border-box; }
+  textarea { min-height: 70px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .check { display: flex; align-items: center; gap: 8px; margin-top: 12px; font-weight: 600; }
+  .check input { width: 18px; height: 18px; }
+  button { background: #0d6efd; color: #fff; border: 0; border-radius: 6px; padding: 10px 18px; font-size: 1rem; font-weight: 600; cursor: pointer; margin-top: 14px; }
+  button:hover { background: #0b5ed7; }
+  button.secondary { background: #6c757d; }
+  button.danger { background: #dc3545; }
+  pre { background: #101820; color: #d7e3f4; padding: 14px; border-radius: 8px; overflow: auto; max-height: 320px; font-size: .8rem; }
+  .hint { font-size: .85rem; color: #5b6b7c; }
+  .ok { color: #157347; font-weight: 700; }
+  ol.steps li { margin-bottom: 8px; }
+  .boatline { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid #eef1f5; font-size: .92rem; }
+</style>
+</head>
+<body>
+
+<h1>🚤 Ison Marine — Inventory Helper</h1>
+<p class="hint">This page never goes on the website. Open it from your computer, make your changes, download the updated <code>data/boats.json</code>, and deploy it like any other file.</p>
+
+<div class="card">
+  <h2 style="margin-top:0">Step 1 — Load your current inventory file</h2>
+  <input type="file" id="fileInput" accept=".json,application/json">
+  <p class="hint">Pick the <code>data/boats.json</code> from the repo. Everything below edits that data. <span id="loadStatus"></span></p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Step 2 — Add a boat <span class="hint">(or skip to Step 3 to update)</span></h2>
+  <div class="row">
+    <div><label>Display name *</label><input type="text" id="f_name" placeholder="'25 Cigarette 41 Nighthawk"></div>
+    <div><label>Brand *</label><select id="f_brand">
+      <option value="cigarette">cigarette</option><option value="glasstream">glasstream</option>
+      <option value="gsx">gsx</option><option value="hellkat">hellkat</option>
+      <option value="outerlimits">outerlimits</option><option value="nautique">nautique</option>
+      <option value="other">other</option>
+    </select></div>
+  </div>
+  <div class="row">
+    <div><label>Year</label><input type="number" id="f_year" placeholder="2025"></div>
+    <div><label>Price (numbers only) *</label><input type="number" id="f_price" placeholder="165000"></div>
+  </div>
+  <label>Main photo path *</label>
+  <input type="text" id="f_image" placeholder="/images/boats/sv29/sv29-1.jpg">
+  <p class="hint">Upload the photos to <code>images/boats/…</code> first, then paste the path here.</p>
+  <label>Short description</label>
+  <textarea id="f_blurb" placeholder="One or two sentences for the listing card."></textarea>
+  <div class="row">
+    <div><label>Detail page (optional)</label><input type="text" id="f_detail" placeholder="/boats/2025-gsx-36-ls.html"></div>
+    <div><label>Button label</label><input type="text" id="f_button" placeholder="View Details"></div>
+  </div>
+  <p class="hint">No detail page yet? Leave it blank — the button will say "Contact Us" and link to the contact page.</p>
+  <label class="check"><input type="checkbox" id="f_consignment"> Consignment boat <span class="hint">(shows on the Consignment page too)</span></label>
+  <button id="addBoat">Add boat to inventory</button>
+  <p id="addStatus"></p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Step 3 — Update or remove a boat</h2>
+  <label>Boat</label><select id="u_select"></select>
+  <div id="u_editor" style="display:none">
+    <div class="row">
+      <div><label>Price</label><input type="number" id="u_price"></div>
+      <div><label>Status</label><select id="u_status"><option value="available">available</option><option value="sold">sold</option></select></div>
+    </div>
+    <label class="check"><input type="checkbox" id="u_consignment"> Consignment</label>
+    <button id="u_save">Save changes</button>
+    <button id="u_remove" class="danger">Remove boat</button>
+    <p id="u_status_msg"></p>
+  </div>
+  <p class="hint">Marking a boat <b>sold</b> takes it off the for-sale pages. Add its photos to the sold gallery below if you want them shown there.</p>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Step 4 — Sold gallery photos <span class="hint">(optional)</span></h2>
+  <div id="soldList"></div>
+  <div class="row">
+    <div><label>Photo path</label><input type="text" id="s_src" placeholder="/images/boats/sold/cig1.jpg"></div>
+    <div><label>Caption</label><input type="text" id="s_title" placeholder="Cigarette Auroris"></div>
+  </div>
+  <button id="s_add" class="secondary">Add sold photo</button>
+</div>
+
+<div class="card">
+  <h2 style="margin-top:0">Step 5 — Download the updated file</h2>
+  <ol class="steps">
+    <li>Click <b>Download boats.json</b>.</li>
+    <li>Replace <code>data/boats.json</code> in the repo with the downloaded file.</li>
+    <li>If you added photos, make sure they're in <code>images/boats/…</code> too.</li>
+    <li>Push to GitHub → pull in cPanel → copy to <code>public_html/isonmarine</code> — your normal deploy.</li>
+  </ol>
+  <button id="download">Download boats.json</button>
+  <h2>Preview</h2>
+  <pre id="preview">{}</pre>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var data = { boats: [], soldGallery: [] };
+
+  function $(id) { return document.getElementById(id); }
+  function refresh() {
+    $('preview').textContent = JSON.stringify(data, null, 2);
+    renderUpdateList(); renderSoldList();
+  }
+  function slug(s) {
+    return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+  }
+
+  // --- Step 1: load ---
+  $('fileInput').addEventListener('change', function (e) {
+    var f = e.target.files[0];
+    if (!f) return;
+    var r = new FileReader();
+    r.onload = function () {
+      try {
+        var d = JSON.parse(r.result);
+        data.boats = d.boats || []; data.soldGallery = d.soldGallery || [];
+        $('loadStatus').innerHTML = '<span class="ok">Loaded ' + data.boats.length + ' boats, ' + data.soldGallery.length + ' sold photos.</span>';
+        refresh();
+      } catch (err) { $('loadStatus').textContent = 'Could not read that file: ' + err.message; }
+    };
+    r.readAsText(f);
+  });
+
+  // --- Step 2: add ---
+  $('addBoat').addEventListener('click', function () {
+    var name = $('f_name').value.trim(), price = $('f_price').value.trim(), image = $('f_image').value.trim();
+    if (!name || !price || !image) { $('addStatus').textContent = 'Name, price, and photo path are required.'; return; }
+    var year = parseInt($('f_year').value, 10);
+    data.boats.push({
+      id: slug(name),
+      name: name,
+      brand: $('f_brand').value,
+      year: isNaN(year) ? null : year,
+      price: Number(price),
+      status: 'available',
+      consignment: $('f_consignment').checked,
+      image: image,
+      blurb: $('f_blurb').value.trim(),
+      detailPage: $('f_detail').value.trim(),
+      buttonLabel: $('f_button').value.trim() || 'View Details'
+    });
+    $('addStatus').innerHTML = '<span class="ok">Added "' + name + '".</span>';
+    ['f_name','f_year','f_price','f_image','f_blurb','f_detail','f_button'].forEach(function (id) { $(id).value = ''; });
+    $('f_consignment').checked = false;
+    refresh();
+  });
+
+  // --- Step 3: update ---
+  function renderUpdateList() {
+    var sel = $('u_select');
+    sel.innerHTML = '<option value="">— choose a boat —</option>' + data.boats.map(function (b, i) {
+      return '<option value="' + i + '">' + b.name + ' (' + b.status + (b.consignment ? ', consignment' : '') + ')</option>';
+    }).join('');
+    $('u_editor').style.display = 'none';
+  }
+  $('u_select').addEventListener('change', function () {
+    var i = $('u_select').value;
+    if (i === '') { $('u_editor').style.display = 'none'; return; }
+    var b = data.boats[+i];
+    $('u_price').value = b.price; $('u_status').value = b.status; $('u_consignment').checked = !!b.consignment;
+    $('u_editor').style.display = 'block'; $('u_status_msg').textContent = '';
+  });
+  $('u_save').addEventListener('click', function () {
+    var i = +$('u_select').value, b = data.boats[i];
+    b.price = Number($('u_price').value); b.status = $('u_status').value; b.consignment = $('u_consignment').checked;
+    $('u_status_msg').innerHTML = '<span class="ok">Saved.</span>'; refresh();
+    $('u_select').value = String(i); $('u_select').dispatchEvent(new Event('change'));
+  });
+  $('u_remove').addEventListener('click', function () {
+    var i = +$('u_select').value;
+    if (!confirm('Remove "' + data.boats[i].name + '" from inventory?')) return;
+    data.boats.splice(i, 1); $('u_status_msg').innerHTML = '<span class="ok">Removed.</span>'; refresh();
+  });
+
+  // --- Step 4: sold gallery ---
+  function renderSoldList() {
+    $('soldList').innerHTML = data.soldGallery.map(function (p, i) {
+      return '<div class="boatline"><span>' + p.title + ' <span class="hint">' + p.src + '</span></span>' +
+        '<button class="danger" data-i="' + i + '" style="margin:0;padding:4px 10px;font-size:.8rem">remove</button></div>';
+    }).join('') || '<p class="hint">No sold photos yet.</p>';
+    $('soldList').querySelectorAll('button').forEach(function (btn) {
+      btn.addEventListener('click', function () { data.soldGallery.splice(+btn.getAttribute('data-i'), 1); refresh(); });
+    });
+  }
+  $('s_add').addEventListener('click', function () {
+    var src = $('s_src').value.trim(), title = $('s_title').value.trim();
+    if (!src) return;
+    data.soldGallery.push({ src: src, title: title || 'Sold boat' });
+    $('s_src').value = ''; $('s_title').value = ''; refresh();
+  });
+
+  // --- Step 5: download ---
+  $('download').addEventListener('click', function () {
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'boats.json';
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+  });
+
+  refresh();
+})();
+</script>
+</body>
+</html>

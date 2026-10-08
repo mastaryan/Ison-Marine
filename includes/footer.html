@@ -67,7 +67,9 @@
   <!-- GLightbox (kept exactly as you had it) -->
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
   <script defer>
-    const lightbox = GLightbox({
+    // Exposed as window._isonLightbox so inventory.js can reload() it after
+    // rendering the sold gallery dynamically.
+    window._isonLightbox = GLightbox({
       selector: '.glightbox',
       touchNavigation: true,
       loop: true,
