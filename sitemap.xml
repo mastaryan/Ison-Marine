@@ -3,7 +3,7 @@
   <!-- Home -->
   <url>
     <loc>https://isonmarine.com/</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -11,19 +11,19 @@
   <!-- Boats -->
   <url>
     <loc>https://isonmarine.com/boats/current-inventory.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/boats/sold-boats.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/boats/consignment.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -31,19 +31,19 @@
   <!-- Individual boat detail pages (only the ones we know for sure) -->
   <url>
     <loc>https://isonmarine.com/boats/2025-hellkat-32.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/boats/2025-gsx-36-ls.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/boats/2025-cigarette-41-nighthawk.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -51,37 +51,37 @@
   <!-- Brands -->
   <url>
     <loc>https://isonmarine.com/brands.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/brands/all-brands.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/brands/cigarette.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/brands/gsx.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/brands/hellkat.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/brands/glasstream.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -89,25 +89,25 @@
   <!-- Products -->
   <url>
     <loc>https://isonmarine.com/products.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/products/apparel.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/products/accessories.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/products/cleaning.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -115,25 +115,25 @@
   <!-- Equipment -->
   <url>
     <loc>https://isonmarine.com/equipment.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/equipment/lifts.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/equipment/trailers.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/equipment/flooring.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -141,7 +141,7 @@
   <!-- Financing -->
   <url>
     <loc>https://isonmarine.com/financing.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -149,19 +149,19 @@
   <!-- Parts & Service -->
   <url>
     <loc>https://isonmarine.com/parts-service.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/parts-service/parts.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/parts-service/services.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -169,7 +169,7 @@
   <!-- Installs -->
   <url>
     <loc>https://isonmarine.com/installs.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -177,25 +177,25 @@
   <!-- About / Contact / Testimonials / Coming Soon -->
   <url>
     <loc>https://isonmarine.com/about.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/about-us/contact-us.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/about-us/testimonials.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://isonmarine.com/comingsoon.html</loc>
-    <lastmod>2025-12-04</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
